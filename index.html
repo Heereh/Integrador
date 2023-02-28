@@ -1,12 +1,244 @@
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200&family=Fira+Sans:wght@300;500&family=Yantramanav:wght@100;300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/mediaqueries.css" />
+    <link rel="stylesheet" href="assets/animaciones.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-logo">
+        <h2><span>GIT</span>VERSE</h2>
+      </div>
+      <div class="search-box">
+        <input id="search" type="search" placeholder="Search game..." />
+      </div>
+      <nav class="navbar">
+        <ul class="nav-list">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Store</a></li>
+          <li><a href="#">Comunnity</a></li>
+          <li><a href="#">Perfil</a></li>
+          <li><a href="#">Library</a></li>
+        </ul>
+
+        <ul class="nav-social">
+          <li><a href="#">ADSA</a></li>
+          <li><a href="#">Rilya</a></li>
+          <li class="social-img">
+            <img
+              src="assets/img/Icons/d8bfb6e9772f342b7972ce78da1597fd1675122640_thumb.jpg"
+              alt=""
+              perfil
+              srcset=""
+            />
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="hero">
+      <img
+        src="assets/img/Games/cropped-1920-1080-1173140 (1).jpg"
+        class="banner"
+      />
+      <div class="hero-text">
+        <img
+          src="assets/img/Games/logo-god-of-war.png"
+          class="hero-title"
+          alt=""
+        />
+        <p>
+          A lo largo de esta nueva travesía, Atreus deberá buscar el
+          conocimiento para entender la profecía de Loki y así desentrañar cuál
+          será su papel en el Ragnarök. Mientras tanto, su padre tendrá que
+          tomar una importante decisión, ¿hará frente a su miedo de repetir
+          errores o dejará atrás su pasado de una vez por todas y se convertirá
+          en el padre que Atreus verdaderamente necesita?
+        </p>
+        <button class="btn-1">Add to library</button>
+      </div>
+    </section>
+
+    <main class="container">
+      <!-- 1 Aside -->
+      <h1>Ofertas especiales</h1>
+      <section class="section-1">
+        <div class="box game-1">
+          <div class="game-info-img">
+            <img src="assets/img/Games/Title/trending0.png" alt="" />
+            <button class="btn-2">-10%</button>
+          </div>
+
+          <div class="game-info">
+            <div class="game-info-top">
+              <h2 class="title">Minecraft</h2>
+              <span class="price">ARS$11,100</span>
+            </div>
+            <div class="game-info-buttom">
+              <p>Precio <span class="off-now">ARS$9990</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="box game-1">
+          <div class="game-info-img">
+            <img src="assets/img/Games/Title/trending1.webp" alt="" />
+            <button class="btn-2">-50%</button>
+          </div>
+
+          <div class="game-info">
+            <div class="game-info-top">
+              <h2 class="title">Cyberpunk 2077</h2>
+              <span class="price">ARS$3999</span>
+            </div>
+            <div class="game-info-buttom">
+              <p>Precio <span class="off-now">ARS$1099</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="box game-1">
+          <div class="game-info-img">
+            <img src="assets/img/Games/Title/trending2.jpg" alt="" />
+            <button class="btn-2">-67%</button>
+          </div>
+
+          <div class="game-info">
+            <div class="game-info-top">
+              <h2 class="title">Battlefiled 2042</h2>
+              <span class="price">ARS$6399</span>
+            </div>
+            <div class="game-info-buttom">
+              <p>Precio <span class="off-now">ARS$2111</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="box game-1">
+          <div class="game-info-img">
+            <img src="assets/img/Games/Title/trending3.jpg" alt="" />
+            <button class="btn-2">-10%</button>
+          </div>
+
+          <div class="game-info">
+            <div class="game-info-top">
+              <h2 class="title">Assassin's Creed Valhalla</h2>
+              <span class="price">ARS$5999</span>
+            </div>
+            <div class="game-info-buttom">
+              <p>Precio <span class="off-now">ARS$3599</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="box game-1">
+          <div class="game-info-img">
+            <img src="assets/img/Games/Title/trending4.jpg" alt="" />
+            <button class="btn-2">-10%</button>
+          </div>
+
+          <div class="game-info">
+            <div class="game-info-top">
+              <h2 class="title">Ghost of Tsushima</h2>
+              <span class="price">ARS$13999</span>
+            </div>
+            <div class="game-info-buttom">
+              <p>Precio <span class="off-now">ARS$10499</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="box game-1">
+          <div class="game-info-img">
+            <img src="assets/img/Games/Title/trending5.png" alt="" />
+            <button class="btn-2">-80%</button>
+          </div>
+
+          <div class="game-info">
+            <div class="game-info-top">
+              <h2 class="title">Grand Theft Auto V</h2>
+              <span class="price">ARS$2950</span>
+            </div>
+            <div class="game-info-buttom">
+              <p>Precio <span class="off-now">ARS$590</span></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="categoria">
+        <h2>Explora por nuestra gran variedad de juegos</h2>
+        <div class="cat-box">
+          <img
+            src="assets/img/Games/Categoria/rogue-like.jpg"
+            alt=""
+            srcset=""
+          />
+          <div class="cat-text">
+            <p>Rogue like</p>
+          </div>
+        </div>
+        <div class="cat-box">
+          <img
+            src="assets/img/Games/Categoria/Supervivencia.jfif"
+            alt=""
+            srcset=""
+          />
+          <div class="cat-text">
+            <p>Supervivencia</p>
+          </div>
+        </div>
+        <div class="cat-box">
+          <img src="assets/img/Games/Categoria/Lucha.jfif" alt="" srcset="" />
+          <div class="cat-text">
+            <p>Lucha</p>
+          </div>
+        </div>
+        <div class="cat-box">
+          <img src="assets/img/Games/Categoria/Aventura.jpg" alt="" srcset="" />
+          <div class="cat-text">
+            <p>Aventura</p>
+          </div>
+        </div>
+        <div class="cat-box">
+          <img src="assets/img/Games/Categoria/terror.jpg" alt="" srcset="" />
+          <div class="cat-text">
+            <p>Terror</p>
+          </div>
+        </div>
+        <div class="cat-box">
+          <img
+            src="assets/img/Games/Categoria/Estrategia.jfif"
+            alt=""
+            srcset=""
+          />
+          <div class="cat-text">
+            <p>Estrategia</p>
+          </div>
+        </div>
+        <div class="cat-box">
+          <img src="assets/img/Games/Categoria/accion.jfif" alt="" srcset="" />
+          <div class="cat-text">
+            <p>Acción</p>
+          </div>
+        </div>
+        <div class="cat-box">
+          <img
+            src="assets/img/Games/Categoria/Turnos.jpg"
+            alt=""
+            srcset=""
+          />
+          <div class="cat-text">
+            <p>Por turnos</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
 </html>

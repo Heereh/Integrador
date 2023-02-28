@@ -1,0 +1,333 @@
+:root {
+  /** Colors */
+  --background: #101314;
+  --secondary-bg: #181a21;
+  --button-cl: #7f5af0;
+  --paragraph-cl: #94a1b2;
+  --button-txt-cl: #fffffe;
+  --headline-cl: #fffffe;
+  --main: #fffffe;
+  --stroke-cl: #010101;
+  --highlight: #7f5af0;
+  --secondary: #72757e;
+  --tertiary: #2cb67d;
+  --price: #a7c957;
+  /* Fonts */
+
+  --font-Catamaran: 'Catamaran', sans-serif;
+  --font-Fira: 'Fira Sans', sans-serif;
+  --font-Yantra: 'Yantramanav', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+body {
+  background: var(--background);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100px;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
+  position: fixed;
+  z-index: 2;
+}
+
+header .header-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 4rem;
+}
+header .header-logo span {
+  color: var(--tertiary);
+  font-family: var(--font-Catamaran);
+  font-size: 2.8rem;
+}
+
+header .header-logo H2 {
+  color: #f2f2f2;
+  font-family: var(--font-Catamaran);
+
+  font-size: 2rem;
+}
+header .search-box {
+  position: relative;
+}
+
+header .search-box {
+  padding-left: 5rem;
+}
+#search {
+  width: 500px;
+  height: 35px;
+  padding-left: 1rem;
+  border: none;
+  outline: none;
+  background-color: gray;
+  opacity: 0.4;
+  color: white;
+  font-size: 1.1rem;
+  font-family: var(--font-Fira);
+  font-weight: 100;
+}
+#search::placeholder {
+  color: #f2f2f2;
+}
+.navbar,
+.nav-list,
+.nav-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar {
+  gap: 150px;
+}
+
+.nav-list {
+  gap: 40px;
+  padding-left: 2rem;
+}
+
+.nav-social {
+  gap: 18px;
+  padding-right: 2.8rem;
+}
+
+.nav-social .social-img img {
+  border-radius: 50%;
+  width: 60px;
+}
+
+.navbar a {
+  color: #f2f2f2;
+  font-family: var(--font-Fira);
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+#hero {
+  position: relative;
+  min-height: 850px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#hero .banner {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  z-index: -3;
+  filter: brightness(50%);
+}
+
+.hero-title {
+  z-index: -1;
+  position: relative;
+  width: 650px;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: white;
+  width: 53%;
+}
+
+.hero-text p {
+  padding-top: 50px;
+  width: 50%;
+  font-size: 1.4rem;
+  font-family: var(--font-Yantra);
+  font-weight: 300;
+  text-align: center;
+  color: var(--headline-cl);
+  z-index: -2;
+}
+
+.btn-1 {
+  margin-top: 25px;
+  background-color: rgba(0, 0, 0, 0.45);
+  box-shadow: #16161a 4px 4px 0px;
+  border-radius: 8px;
+  padding: 20px 25px;
+  color: var(--button-txt-cl);
+  font-family: var(--font-Yantra);
+  border: none;
+  font-weight: bolder;
+  font-size: 1rem;
+  text-transform: uppercase;
+  min-width: 120px;
+  transition: transform 200ms, box-shadow 200ms;
+  z-index: -1;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 200px;
+  /*  max-width: 1400px; */
+}
+h1,
+h2 {
+  color: var(--main);
+  font-family: var(--font-Catamaran);
+  font-weight: 400;
+}
+
+.container h1 {
+  font-size: 2.1rem;
+  align-self: flex-start;
+  padding: 0 0 5.5rem 6rem;
+}
+
+.section-1,
+.categoria {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1300px;
+}
+.box {
+  width: 255px;
+  position: relative;
+}
+.game-info-img {
+  position: relative;
+  width: 255px;
+  height: 350px;
+}
+
+.game-info-img img {
+  width: 255px;
+  height: 350px;
+}
+.game-info-img .btn-2 {
+  position: absolute;
+  right: 201px;
+}
+
+.btn-2 {
+  background-color: var(--price);
+  color: #386641;
+  border: none;
+  outline: none;
+  padding: 6px 6px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 4px;
+  position: relative;
+}
+.game-info {
+  position: relative;
+  width: 255px;
+}
+
+.game-info h2 {
+  color: var(--headline-cl);
+  font-family: var(--font-Yantra);
+  padding: 0.9rem 0 0 0.1rem;
+}
+
+.game-info-top {
+  display: flex;
+  width: 100%;
+  gap: 100px;
+}
+
+.game-info p {
+  font-family: var(--font-Fira);
+  color: var(--price);
+  padding: 1.2rem 0 0 0;
+}
+
+.game-info-top .price {
+  position: absolute;
+  font-size: 0.9rem;
+  top: 60;
+  left: 180;
+}
+.game-info .price {
+  color: var(--secondary);
+  text-decoration: line-through;
+}
+
+.game-info-buttom {
+  padding-top: 1rem;
+}
+.game-info-buttom p {
+  font-weight: 300;
+}
+.game-info-buttom p,
+.off-now {
+  color: var(--price);
+  font-family: var(--font-Fira);
+  display: flex;
+  gap: 142px;
+}
+
+/**************** Categoria  */
+
+.categoria {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding-top: 200px;
+}
+.categoria h2 {
+  align-items: flex-start;
+  width: 100%;
+  padding-bottom: 50px;
+}
+.cat-box {
+  width: 280px;
+  height: 150px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.cat-box img {
+  object-fit: cover;
+  width: 280px;
+  height: 150px;
+}
+
+.cat-text {
+  position: absolute;
+  bottom: 0px;
+  background-color: rgba(0, 0, 0, 0.45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 25px;
+}
+
+.cat-box p {
+  font-family: var(--font-Fira);
+  font-weight: 400;
+  color: var(--main);
+  font-size: 1rem;
+}

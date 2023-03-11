@@ -1,12 +1,13 @@
 :root {
   /** Colors */
-  --background: #101314;
-  --secondary-bg: #181a21;
+  --background-main: #000000;
+  --secondary-bg: #101115;
   --button-cl: #7f5af0;
   --paragraph-cl: #94a1b2;
-  --button-txt-cl: #fffffe;
+  --button-txt-cl: #b8b83a;
   --headline-cl: #fffffe;
   --main: #fffffe;
+  --main-rm: #eef5e8;
   --stroke-cl: #010101;
   --highlight: #7f5af0;
   --secondary: #72757e;
@@ -27,7 +28,7 @@
   list-style: none;
 }
 body {
-  background: var(--background);
+  background-color: var(--background-main);
 }
 
 header {
@@ -73,7 +74,7 @@ header .search-box {
   padding-left: 1rem;
   border: none;
   outline: none;
-  background-color: gray;
+  background-color: var(--secondary);
   opacity: 0.4;
   color: white;
   font-size: 1.1rem;
@@ -176,6 +177,7 @@ header .search-box {
   min-width: 120px;
   transition: transform 200ms, box-shadow 200ms;
   z-index: -1;
+  cursor: pointer;
 }
 
 main {
@@ -200,7 +202,8 @@ h2 {
 }
 
 .section-1,
-.categoria {
+.categoria,
+.recommend {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -211,6 +214,9 @@ h2 {
 .box {
   width: 255px;
   position: relative;
+  background-color: var(--secondary-bg);
+  border-radius: 10px;
+  cursor: pointer;
 }
 .game-info-img {
   position: relative;
@@ -246,7 +252,7 @@ h2 {
 .game-info h2 {
   color: var(--headline-cl);
   font-family: var(--font-Yantra);
-  padding: 0.9rem 0 0 0.1rem;
+  padding: 0.9rem 0 0 0.4rem;
 }
 
 .game-info-top {
@@ -254,18 +260,20 @@ h2 {
   width: 100%;
   gap: 100px;
 }
-
-.game-info p {
+.price {
   font-family: var(--font-Fira);
   color: var(--price);
-  padding: 1.2rem 0 0 0;
+}
+
+.game-info p {
+  padding: 1.2rem 0 1rem 0.5rem;
 }
 
 .game-info-top .price {
   position: absolute;
   font-size: 0.9rem;
   top: 60;
-  left: 180;
+  left: 170;
 }
 .game-info .price {
   color: var(--secondary);
@@ -283,10 +291,179 @@ h2 {
   color: var(--price);
   font-family: var(--font-Fira);
   display: flex;
-  gap: 142px;
+  gap: 122px;
+}
+/**************** Recommend  **************/
+
+.recommend {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding-top: 200px;
+}
+.recommend .recommend-big-game {
+  width: 1150px;
+  height: 650px;
+  background-color: var(--secondary-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
-/**************** Categoria  */
+.recommend-big-game .big-img {
+  height: 100%;
+  display: flex;
+}
+.big-img img {
+  object-fit: cover;
+}
+.big-descripcion {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.big-descripcion h3 {
+  font-family: var(--font-Yantra);
+  font-size: 2.2rem;
+  padding: 1.5rem 0 1rem 0;
+  align-self: center;
+  color: var(--main);
+}
+.big-descripcion .big-blabla {
+  width: 90%;
+  font-size: 1.24rem;
+  font-family: var(--font-Catamaran);
+  font-weight: 500;
+  padding: 1rem 0 0 1rem;
+  align-self: center;
+  padding-bottom: 250px;
+  color: var(--main);
+}
+.big-blabla {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.descipcion-price ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.descipcion-price ul li {
+  font-size: 1.3rem;
+  padding: 0 1rem 0 1rem;
+}
+
+.recommend-box {
+  margin-top: 50px;
+  background-color: var(--secondary-bg);
+  width: 400px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.recommend-box .box-img {
+  width: 400px;
+  height: 200px;
+}
+.box-img img {
+  width: 400px;
+  height: 200px;
+  object-fit: cover;
+}
+.box-info {
+  width: 100%;
+  color: var(--main);
+}
+.box-info p {
+  font-family: var(--font-Yantra);
+  font-weight: bold;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  padding: 1rem 0 0.5rem 1rem;
+}
+.box-info span {
+  font-family: var(--font-Fira);
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  padding-left: 1rem;
+  color: var(--paragraph-cl);
+}
+/**************** Tabs-Shop  **************/
+
+#home-tabs {
+  display: flex;
+  width: 100%;
+  /* height: 1000px; */
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 150px;
+}
+.home-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 1200px;
+  gap: 10px;
+}
+
+.home-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 900px;
+  height: 90px;
+  background-color: var(--secondary-bg);
+  border-radius: 10px;
+  position: relative;
+}
+.home-info .home-img {
+  width: 190px;
+  height: 100%;
+  position: relative;
+}
+.home-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.home-info .home-game {
+  font-family: var(--font-Yantra);
+  color: var(--main);
+  font-size: 1rem;
+  padding: 0.6rem 0 0 0.8rem;
+  width: 100%;
+  /* position: relative; */
+}
+.home-game p {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  padding-bottom: 7px;
+}
+.home-game-descripcion {
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+.home-game-price {
+  position: relative;
+  left: 300;
+  bottom: 10;
+  font-size: 1.4rem;
+  color: var(--paragraph-cl);
+}
+
+/**************** Categoria  **************/
 
 .categoria {
   display: flex;
@@ -294,7 +471,8 @@ h2 {
   width: 100%;
   padding-top: 200px;
 }
-.categoria h2 {
+.categoria h2,
+.recommend h2 {
   align-items: flex-start;
   width: 100%;
   padding-bottom: 50px;

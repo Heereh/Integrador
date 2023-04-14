@@ -1,6 +1,6 @@
 :root {
   /** Colors */
-  --background-main: #000000;
+  --background-main: hsl(0, 0%, 0%);
   --secondary-bg: #101115;
   --button-cl: #7f5af0;
   --paragraph-cl: #94a1b2;
@@ -12,6 +12,7 @@
   --secondary: #72757e;
   --tertiary: #2cb67d;
   --price: #a7c957;
+  /* #ffd40 */
   /* Fonts */
 
   --font-Catamaran: 'Catamaran', sans-serif;
@@ -72,7 +73,7 @@ header .header-logo H2 {
 }
 
 .navbar {
-  gap: 85px;
+  gap: 60px;
 }
 
 .nav-list {
@@ -80,15 +81,17 @@ header .header-logo H2 {
   padding-left: 2rem;
 }
 
+
+
+.nav-list .nav__list__social {
+  display: none;
+}
+
 .nav-social {
   gap: 18px;
   padding-right: 2.8rem;
 }
 
-.nav-social .social-img img {
-  border-radius: 50%;
-  width: 60px;
-}
 
 .navbar a {
   color: #f2f2f2;
@@ -127,7 +130,8 @@ h2 {
   align-items: center;
   justify-content: flex-end;
   margin: 0 5rem;
-  top: 150px;
+  top: 200px;
+  /* margin-bottom: 200px; */
 }
 .home img {
   position: absolute;
@@ -180,6 +184,7 @@ h2 {
   flex-wrap: wrap;
   gap: 5px;
   max-width: 1200px;
+  margin-top: 220px;
 }
 .section-1 h1 {
   font-size: 2.1rem;
@@ -446,10 +451,11 @@ h2 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin: 3rem;
 }
 .home-info {
   background-color: var(--secondary-bg);
-  width: 900px;
+  width: 100%;
   display: flex;
   margin: 3px;
 }
@@ -504,7 +510,7 @@ h2 {
   font-family: var(--font-Yantra);
   color: var(--main);
   font-size: 1rem;
-  padding: 0.6rem 0 0 0.8rem;
+  padding: 0.6rem 0.5rem 0 0.8rem;
   width: 100%;
 }
 .home-game p {
@@ -523,9 +529,17 @@ h2 {
 .descripcion_category {
   font-size: 1.2rem;
   font-weight: 200;
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
 }
 .descipcion__price__game {
-  padding-right: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.price__game {
   font-size: 1.4rem;
   color: var(--paragraph-cl);
 }
@@ -601,13 +615,14 @@ h2 {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 .footer__socials {
   display: flex;
   justify-content: start;
+  align-items: center;
   flex-direction: column;
-  width: 27%;
+  width: 100%;
   height: 100%;
 }
 
@@ -617,11 +632,11 @@ h2 {
   font-family: var(--font-Fira);
   font-weight: 500;
   text-transform: uppercase;
-
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   padding-bottom: 10px;
+  width: 30%;
 }
 
 .footer__socials .socials-links {

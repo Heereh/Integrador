@@ -5,10 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200&family=Fira+Sans:wght@300;500&family=Yantramanav:wght@100;300&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Catamaran:wght@100;200&family=Fira+Sans:wght@300;500&family=Yantramanav:wght@100;300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="assets/mediaqueries.css" />
     <link rel="stylesheet" href="assets/animaciones.css" />
@@ -19,66 +18,49 @@
       <div class="header-logo">
         <h2><span>GIT</span>VERSE</h2>
       </div>
-      <div class="search-box">
-        <input id="search" type="search" placeholder="Search game..." />
-      </div>
+      
+   
       <nav class="navbar">
+        <label for="menu-toggle" class="menu-label">
+          <img src="assets/img/Icons/bx-menu.svg" alt="menu" class="label__img">
+        </label>
+        <input type="checkbox" id="menu-toggle" />
         <ul class="nav-list">
           <li><a href="#">Home</a></li>
-          <li><a href="#">Store</a></li>
-          <li><a href="#">Comunnity</a></li>
+          <li><a href="#">Recomendado</a></li>
+          <li><a href="#">Explora</a></li>
+          <li><a href="#">Categorias</a></li>
           <li><a href="#">Perfil</a></li>
-          <li><a href="#">Library</a></li>
         </ul>
 
         <ul class="nav-social">
-          <li><a href="#">ADSA</a></li>
-          <li><a href="#">Rilya</a></li>
-          <li class="social-img">
-            <img
-              src="assets/img/Icons/d8bfb6e9772f342b7972ce78da1597fd1675122640_thumb.jpg"
-              alt=""
-              perfil
-              srcset=""
-            />
+          <li><a href="pages/register.html">Registrarse</a></li>
+          <li><a href="pages/login.html">Iniciar sesión</a></li>
           </li>
         </ul>
       </nav>
     </header>
-
-    <section id="hero" class="home">
-      <img
-        src="assets/img/Games/cropped-1920-1080-1173140 (1).jpg"
-        class="banner"
-      />
-      <div class="hero-text">
-        <img
-          src="assets/img/Games/logo-god-of-war.png"
-          class="hero-title"
-          alt=""
-        />
-        <p>
-          A lo largo de esta nueva travesía, Atreus deberá buscar el
-          conocimiento para entender la profecía de Loki y así desentrañar cuál
-          será su papel en el Ragnarök. Mientras tanto, su padre tendrá que
-          tomar una importante decisión, ¿hará frente a su miedo de repetir
-          errores o dejará atrás su pasado de una vez por todas y se convertirá
-          en el padre que Atreus verdaderamente necesita?
-        </p>
-        <button class="btn-1">Add to library</button>
-      </div>
-    </section>
-
-    <main class="container">
-      <!-- 1 Aside -->
-      <h1>Ofertas especiales</h1>
+  <!-- Section Hero -->
+  <section class="home container">
+   <img src="assets/img/Games/home.png" alt="">
+   <div class="home-text">
+     <h1 class="home-title">
+      Cyberpunk 2077
+     </h1>
+     <a href="#" class="btn">Disponible YA!</a>
+   </div>
+  </section>
+  <main id="container">
+      <!-- Section 1 -->
       <section class="section-1">
+        <h1>Ofertas especiales</h1>
+        <div class="section-box-info">
         <div class="box game-1">
           <div class="game-info-img">
             <img src="assets/img/Games/Title/trending0.png" alt="" />
             <button class="btn-2">-10%</button>
           </div>
-
+  
           <div class="game-info">
             <div class="game-info-top">
               <h2 class="title">Minecraft</h2>
@@ -94,7 +76,7 @@
             <img src="assets/img/Games/Title/trending1.webp" alt="" />
             <button class="btn-2">-50%</button>
           </div>
-
+  
           <div class="game-info">
             <div class="game-info-top">
               <h2 class="title">Cyberpunk 2077</h2>
@@ -110,7 +92,7 @@
             <img src="assets/img/Games/Title/trending2.jpg" alt="" />
             <button class="btn-2">-67%</button>
           </div>
-
+  
           <div class="game-info">
             <div class="game-info-top">
               <h2 class="title">Battlefiled 2042</h2>
@@ -126,7 +108,7 @@
             <img src="assets/img/Games/Title/trending3.jpg" alt="" />
             <button class="btn-2">-10%</button>
           </div>
-
+  
           <div class="game-info">
             <div class="game-info-top">
               <h2 class="title">Assassin's Creed Valhalla</h2>
@@ -142,7 +124,7 @@
             <img src="assets/img/Games/Title/trending4.jpg" alt="" />
             <button class="btn-2">-10%</button>
           </div>
-
+  
           <div class="game-info">
             <div class="game-info-top">
               <h2 class="title">Ghost of Tsushima</h2>
@@ -158,7 +140,7 @@
             <img src="assets/img/Games/Title/trending5.png" alt="" />
             <button class="btn-2">-80%</button>
           </div>
-
+  
           <div class="game-info">
             <div class="game-info-top">
               <h2 class="title">Grand Theft Auto V</h2>
@@ -169,153 +151,203 @@
             </div>
           </div>
         </div>
+      </div>
+        
       </section>
+
+      <!-- Section 2 -->
       <section class="recommend">
         <h2>Nuestras recomendaciones</h2>
-        <div class="recommend-big-game">
-          <div class="big-img">
+        <div class="recommend-info-game">
+          <div class="recommend-big-game">
+           <div class="big-img">
             <img src="assets/img/Games/Recommend/god-of-war.jpg" alt="" />
+            </div>
+            <div class="descripcion">
+              <div class="descripcion-game">
+                <h2>GOD OF WAR: RAGNAROK</h2>
+                <p class="big-blabla">
+                a historia de God of War Ragnarok comienza unos años después de
+                los eventos de God of War (2018). Las acciones anteriores de
+                Kratos y Atreus han dado paso a Fimbulwinter, alterando
+                dramáticamente el clima de los nueve reinos. En su incansable
+                impulso y casi obsesión por estar preparado, Kratos ha estado
+                entrenando a Atreus durante los últimos años en previsión de lo
+                que viene: el Ragnarok.
+               </p>
+              </div>
+              <div class="descipcion-price">
+                <ul class="price">
+                  <li>Precio:</li>
+                  <li>ARS$8400</li>
+                </ul>
+              </div>
           </div>
-          <div class="big-descripcion">
-            <h3>GOD OF WAR: RAGNAROK</h3>
-            <p class="big-blabla">
-              a historia de God of War Ragnarok comienza unos años después de
-              los eventos de God of War (2018). Las acciones anteriores de
-              Kratos y Atreus han dado paso a Fimbulwinter, alterando
-              dramáticamente el clima de los nueve reinos. En su incansable
-              impulso y casi obsesión por estar preparado, Kratos ha estado
-              entrenando a Atreus durante los últimos años en previsión de lo
-              que viene: el Ragnarok.
-            </p>
-            <div class="descipcion-price">
-              <ul class="price">
-                <li>Precio:</li>
-                <li>ARS$8400</li>
-              </ul>
+        
+        </div>
+        <div class="box-recommend">
+          <div class="recommend-box">
+            <div class="box-img">
+              <img src="assets/img/Games/Recommend/1366_2000.jpeg" alt="" />
+            </div>
+            <div class="box-info">
+              <p class="box-title">Red Dead Redemption 2</p>
+              <span>ARS$ 11299</span>
+              <p class="box-blabla">
+                Arthur Morgan y la banda de Van der Linde son forajidos en busca y
+                captura. Mientras los agentes federales y los mejores
+                cazarrecompensas de la nación les pisan los talones, la banda
+                deberá abrirse camino por el abrupto territorio del corazón de
+                América y sobrevivir a base de robos y peleas. Arthur deberá
+                elegir entre sus propios ideales y la lealtad a la banda que lo
+                vio crecer.
+              </p>
+            </div>
+          </div>
+          <div class="recommend-box">
+            <div class="box-img">
+              <img
+                src="assets/img/Games/Recommend/wallpapersden.com_sekiro-shadows-die-twice_1366x768.jpg"
+                alt=""
+              />
+            </div>
+            <div class="box-info">
+              <p class="box-title">Sekiro: Shadows Die Twice</p>
+              <span>ARS$ 1299</span>
+              <p class="box-blabla">
+                un guerrero desfigurado y caído en desgracia que ha sido rescatado
+                al borde de la muerte. Tras jurar proteger a un joven señor
+                descendiente de un antiguo linaje, te conviertes en el objetivo de
+                despiadados enemigos, entre ellos el peligroso clan Ashina. Cuando
+                el joven señor sea capturado, nada te detendrá en tu peligrosa
+                aventura por restituir tu honor, ni siquiera la muerte.
+              </p>
+            </div>
+          </div>
+          <div class="recommend-box">
+            <div class="box-img">
+              <img src="assets/img/Games/Recommend/1366_2000 (1).jpeg" alt="" />
+            </div>
+            <div class="box-info">
+              <p class="box-title">Hogwarts Legacy</p>
+              <span>ARS$ 8999</span>
+              <p class="box-blabla">
+                un mundo abierto ambientado en el universo de los libros de Harry
+                Potter. Embárcate en un viaje que te llevará a lugares nuevos y ya
+                conocidos, y en el que podrás descubrir animales fantásticos.
+                convertirte en la bruja o el mago que quieras ser.
+              </p>
             </div>
           </div>
         </div>
-        <div class="recommend-box">
-          <div class="box-img">
-            <img src="assets/img/Games/Recommend/1366_2000.jpeg" alt="" />
-          </div>
-          <div class="box-info">
-            <p>Red Dead Redemption 2</p>
-            <span>ARS$ 11299</span>
-          </div>
+        
+      </section>
+
+      <!-- <div class="tabs_list">
+        <div class="list">
+          <ul>
+            <li>Novedades</li>
+            <li>Más vendidos</li>
+            <li>Ofertas</li>
+            <li>Gratuitos</li>
+          </ul>
         </div>
-        <div class="recommend-box">
-          <div class="box-img">
-            <img
-              src="assets/img/Games/Recommend/wallpapersden.com_sekiro-shadows-die-twice_1366x768.jpg"
-              alt=""
-            />
+      </div> -->
+      <!-- Section 3 -->
+      <section class="home-tabs">
+        <div class="tabs-content"></div>
+        <div class="home-content">
+          <div class="home-info">
+            <div class="home-img">
+              <img src="assets/img/Games/Tabs/capsule_616x353.jpg" alt="">
+            </div>
+            <div class="home-game">
+              <h2 class="home-game-descripcion">Sons Of The Forest</h2>
+              <div class="game-descripcion">
+                <span class="descripcion_category">Supervivencia, Terror, Multijugador</span>
+                <span class="descipcion__price__game">ARS$ 2.100,00</span>
+              </div>
+            </div>
           </div>
-          <div class="box-info">
-            <p>Sekiro: Shadows Die Twice</p>
-            <span>ARS$ 1299</span>
+          <div class="home-info">
+            <div class="home-img">
+              <img src="assets/img/Games/Tabs/brotato.jpg" alt="brotato">
+            </div>
+            <div class="home-game">
+              <h2 class="home-game-descripcion">Brotato</h2>
+              <div class="game-descripcion">
+                <span class="descripcion_category">Acción, Casual, Indie</span>
+                <span class="descipcion__price__game">ARS$ 2.100,00</span>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="recommend-box">
-          <div class="box-img">
-            <img src="assets/img/Games/Recommend/1366_2000 (1).jpeg" alt="" />
+          <div class="home-info">
+            <div class="home-img">
+              <img src="assets/img/Games/Tabs/dead-cells.jpg" alt="">
+            </div>
+            <div class="home-game">
+              <h2 class="home-game-descripcion">Dead Cells</h2>
+              <div class="game-descripcion">
+                <span class="descripcion_category">Acción, Aventura, Indie</span>
+                <span class="descipcion__price__game">ARS$ 2.100,00</span>
+              </div>
+            </div>
           </div>
-          <div class="box-info">
-            <p>Hogwarts Legacy</p>
-            <span>ARS$ 8999</span>
+          <div class="home-info">
+            <div class="home-img">
+              <img src="assets/img/Games/Tabs/forza-horizon5.jpg" alt="ForzaHorizon5">
+            </div>
+            <div class="home-game">
+              <h2 class="home-game-descripcion">Forza Horizon 5</h2>
+              <div class="game-descripcion">
+                <span class="descripcion_category">Carreras, Accion, Simuladores, Aventura</span>
+                <span class="descipcion__price__game">ARS$ 5.999,00</span>
+              </div>
+            </div>
+          </div>
+          <div class="home-info">
+            <div class="home-img">
+              <img src="assets/img/Games/Tabs/monsterHunterWord.jpg" alt="MonsterHunterWord">
+            </div>
+            <div class="home-game">
+              <h2 class="home-game-descripcion">Monster Hunter: World</h2>
+              <div class="game-descripcion">
+                <span class="descripcion_category">Acción, Mundo abierto, Rol, Aventura</span>
+                <span class="descipcion__price__game">ARS$ 4.345,00</span>
+              </div>
+            </div>
+          </div>
+          <div class="home-info">
+            <div class="home-img">
+              <img src="assets/img/Games/Tabs/residentEvil.jpg" alt="ResidentEvil4">
+            </div>
+            <div class="home-game">
+              <h2 class="home-game-descripcion">Resident Evil 4</h2>
+              <div class="game-descripcion">
+                <span class="descripcion_category">Acción, Zombis, Terror, Un jugador</span>
+                <span class="descipcion__price__game">ARS$ 12.960,00</span>
+              </div>
+            </div>
+          </div>
+          <div class="home-info">
+            <div class="home-img">
+              <img src="assets/img/Games/Tabs/project-zomboid.jpg" alt="ProjectZomboid">
+            </div>
+            <div class="home-game">
+              <h2 class="home-game-descripcion">Project Zomboid</h2>
+              <div class="game-descripcion">
+                <span class="descripcion_category">Indie, Rol, Simuladores, Mundo abierto</span>
+                <span class="descipcion__price__game">ARS$ 1.400,00</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
-      <section id="home-tabs">
-        <div class="home-box">
-          <div class="home-info">
-            <div class="home-img">
-              <img
-                src="assets/img/Games/Tabs/capsule_616x353.jpg"
-                alt="SonsOfTheForest"
-              />
-            </div>
-            <div class="home-game">
-              <p class="home-game-title">Sons Of The Forest</p>
-              <span class="home-game-descripcion"
-                >Supervivencia, Terror, Multijugador</span
-              >
-              <span class="home-game-price">ARS$ 2.100,00</span>
-            </div>
-          </div>
-          <div class="home-info">
-            <div class="home-img">
-              <img src="assets/img/Games/Tabs/dead-cells.jpg" alt="DeadCells" />
-            </div>
-            <div class="home-game">
-              <p class="home-game-title">Dead Cells</p>
-              <span class="home-game-descripcion"
-                >Supervivencia, Terror, Multijugador</span
-              >
-              <span class="home-game-price">ARS$ 2.100,00</span>
-            </div>
-          </div>
-          <div class="home-info">
-            <div class="home-img">
-              <img
-                src="assets/img/Games/Tabs/forza-horizon5.jpg"
-                alt="ForzaHorizon5"
-              />
-            </div>
-            <div class="home-game">
-              <p class="home-game-title">Sons Of The Forest</p>
-              <span class="home-game-descripcion"
-                >Supervivencia, Terror, Multijugador</span
-              >
-              <span class="home-game-price">ARS$ 2.100,00</span>
-            </div>
-          </div>
-          <div class="home-info">
-            <div class="home-img">
-              <img
-                src="assets/img/Games/Tabs/monsterHunterWord.jpg"
-                alt="MonsterHunterWorld"
-              />
-            </div>
-            <div class="home-game">
-              <p class="home-game-title">Sons Of The Forest</p>
-              <span class="home-game-descripcion"
-                >Supervivencia, Terror, Multijugador</span
-              >
-              <span class="home-game-price">ARS$ 2.100,00</span>
-            </div>
-          </div>
-          <div class="home-info">
-            <div class="home-img">
-              <img
-                src="assets/img/Games/Tabs/residentEvil.jpg"
-                alt="Resident Evil 4"
-              />
-            </div>
-            <div class="home-game">
-              <p class="home-game-title">Sons Of The Forest</p>
-              <span class="home-game-descripcion"
-                >Supervivencia, Terror, Multijugador</span
-              >
-              <span class="home-game-price">ARS$ 2.100,00</span>
-            </div>
-          </div>
-          <div class="home-info">
-            <div class="home-img">
-              <img src="assets/img/Games/Tabs/brotato.jpg" alt="brotato" />
-            </div>
-            <div class="home-game">
-              <p class="home-game-title">Sons Of The Forest</p>
-              <span class="home-game-descripcion"
-                >Supervivencia, Terror, Multijugador</span
-              >
-              <span class="home-game-price">ARS$ 2.100,00</span>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="categoria">
-        <h2>Explora por nuestra gran variedad de juegos</h2>
+
+      <!-- Section 4 -->
+       <section class="categoria">
+      <h2>Explora por nuestra gran variedad de juegos</h2>
+      <div class="categoria-info">
         <div class="cat-box">
           <img
             src="assets/img/Games/Categoria/rogue-like.jpg"
@@ -376,8 +408,76 @@
             <p>Por turnos</p>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
     </main>
-    <footer></footer>
+    <footer id="footer">
+      <div class="footer__container">
+        <div class="footer__socials">
+          <span class="footer--title">
+            Tu tienda de Preferencia
+          </span>
+          
+            <ul class="socials-links">
+              <li>
+                <a href="#"><img src="assets/img/Icons/footer/bxl-facebook-circle.svg" alt=""></a>
+              </li>
+              <li>
+                <a href="#"><img src="assets/img/Icons/footer/bxl-instagram.svg" alt=""></a>
+              </li>
+              <li>
+                <a href="#"><img src="assets/img/Icons/footer/bxl-twitter.svg" alt=""></a>
+              </li>
+              <li>
+                <a href="#"><img src="assets/img/Icons/footer/bxl-youtube.svg" alt=""></a>
+              </li>
+              
+            </ul>
+  
+          
+        </div>
+        <div class="footer__information">
+          <div class="footer_product">
+            <span>Productos</span>
+            <ul>
+              <li>Descargar</li>
+              <li>GitVerse Mobile</li>
+            </ul>
+          </div>
+          <div class="footer_company">
+            <span>Compañia</span>
+            <ul>
+              <li>Sobre nosotros</li>
+              <li>Noticias</li>
+              <li>Marca</li>
+                
+            </ul>
+          </div>
+          <div class="footer__suport">
+            <span>Recursos</span>
+            <ul> 
+              <li>Soporte técnico</li>
+              <li>Seguridad</li>
+              <li>Blog</li>
+              <li>Creadores</li>
+              <li>Comunidad</li>
+            </ul>
+          </div>
+          <div class="footer_politica">
+            <span>Políticas</span>
+            <ul>    
+              <li>Condiciones</li>
+              <li>Privacidad</li>
+              <li>Cookies</li>
+              <li>Directiva</li>
+              <li>Licencias</li>
+              <li>Moderación<li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+    </footer> 
   </body>
 </html>

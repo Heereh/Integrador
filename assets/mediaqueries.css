@@ -1,0 +1,101 @@
+@media (max-width: 1050px) {
+  .home {
+    align-items: start;
+  }
+  .home .home-text {
+    padding-top: 90px;
+    padding-right: 2rem;
+  }
+  .home-text .home-title{
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar {
+    gap: 10px;
+  }
+  .nav-list {
+    position: absolute;
+    top: 85px;
+    left: 5%;
+    right: 5%;
+    width: 90%;
+    flex-direction: column;
+    background-color: var(--secondary-bg);
+    border: 2px solid var();
+    border-top: 0;
+    border-radius: 0 0 5px 5px;
+    align-items: flex-start;
+    padding: 45px 30px;
+    gap: 25px;
+    z-index: 3;
+    display: none;
+  }
+
+  .nav-list a {
+    font-size: 21px;
+  }
+  .menu-label {
+    display: flex;
+    order: 2;
+    cursor: pointer;
+    padding-right: 10px;
+  }
+  .menu-label img {
+    height: 50px;
+    width: 55px;
+  }
+  #menu-toggle:checked + .nav-list {
+    display: flex;
+  }
+}
+
+@media (max-width: 912px) {
+  /*@ Section Hero */
+
+  /*@ Section Recommend */
+  .recommend-big-game {
+    width: 650px;
+    height: auto;
+    flex-wrap: wrap;
+  }
+
+  .descripcion-game h2 {
+    display: inline;
+    font-size: 1.7rem;
+  }
+  .descripcion-game .big-blabla {
+    padding: 0 0 15px 0;
+    display: inline;
+  }
+  .descipcion-price {
+    position: static;
+    align-items: center;
+    width: 90%;
+    padding-bottom: 10px;
+  }
+
+  .descipcion-price ul li {
+    padding: 0;
+  }
+
+  /* Section 3 */
+  .home-info{
+    width: 650px;
+  }
+  .home-info .home-game{
+    font-size: .9rem;
+    padding: .4rem 0 0 .6rem;
+  }
+  .descripcion_category{
+    font-size: 1.1rem;
+    font-weight: 400;
+  }
+  .descipcion__price__game{
+    padding-right: 10px;
+    font-size: 1.3rem;
+    color: var(--main);
+  }
+}
+

@@ -81,8 +81,6 @@ header .header-logo H2 {
   padding-left: 2rem;
 }
 
-
-
 .nav-list .nav__list__social {
   display: none;
 }
@@ -91,7 +89,6 @@ header .header-logo H2 {
   gap: 18px;
   padding-right: 2.8rem;
 }
-
 
 .navbar a {
   color: #f2f2f2;
@@ -283,7 +280,7 @@ h2 {
   gap: 122px;
 }
 
-/**************** Recommend  **************/
+/**************** Section-2  **************/
 
 .recommend {
   display: flex;
@@ -293,10 +290,10 @@ h2 {
   max-width: 1200px;
   padding-top: 200px;
 }
-.recommend h2 {
+.recommend .recommend__title {
   display: flex;
   text-align: start;
-  width: 90%;
+  width: 100%;
   padding-bottom: 50px;
 }
 .recommend-info-game {
@@ -434,7 +431,7 @@ h2 {
   padding: 10px 10px;
 }
 
-/**************** Tabs-Shop  **************/
+/**************** Section-3  **************/
 
 .home-tabs {
   max-width: 1200px;
@@ -444,21 +441,68 @@ h2 {
   align-items: center;
   padding-top: 150px;
   margin: 0 1rem;
+  flex-direction: column;
 }
+
+.home-tabs-content {
+  margin: 0 1rem;
+  max-width: 1082px;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  border-bottom: 1px solid var(--highlight);
+}
+.tabs-span {
+  color: var(--main);
+  font-family: var(--font-Catamaran);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.tabs_list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding-bottom: 5px;
+}
+.tabs_list .list {
+  display: flex;
+  color: var(--main);
+  font-family: var(--font-Catamaran);
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding-bottom: 10px;
+}
+.tabs_list .list .list__info {
+  display: flex;
+  gap: 40px;
+  cursor: pointer;
+}
+.tabs_list .list .list__info a {
+  color: var(--main);
+}
+.dropdown{
+  display: none;
+}
+
 .home-content {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 3rem;
+  padding: 1rem 3rem 0 3rem;
 }
+
 .home-info {
   background-color: var(--secondary-bg);
   width: 100%;
   display: flex;
   margin: 3px;
 }
+
 .home-img {
   width: 190px;
   height: 108px;
@@ -469,42 +513,6 @@ h2 {
 .home-game {
   width: 100%;
 }
-
-/* .home-tabs-content {
-  margin: 0 1rem;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
- */
-/* .tabs_list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
-  padding-bottom: 30px;
-  border-bottom: 1px solid var(--highlight); 
-} */
-/* .tabs_list .list {
-  display: flex;
-  color: var(--main);
-  font-family: var(--font-Catamaran);
-  font-weight: 600;
-  font-size: 1.2rem;
-  padding-bottom: 10px;
-} */
-/* .tabs_list .list ul {
-  display: flex;
-  gap: 100px;
-  cursor: pointer;
-} */
-/* .list-product {
-  display: flex;
-  flex-direction: column;
-  padding-top: 30px;
-  gap: 4px;
-  width: 100%;
-} */
 
 .home-info .home-game {
   font-family: var(--font-Yantra);

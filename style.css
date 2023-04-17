@@ -295,6 +295,7 @@ h2 {
   text-align: start;
   width: 100%;
   padding-bottom: 50px;
+  padding-left: 1rem;
 }
 .recommend-info-game {
   display: flex;
@@ -483,7 +484,7 @@ h2 {
 .tabs_list .list .list__info a {
   color: var(--main);
 }
-.dropdown{
+.dropdown {
   display: none;
 }
 

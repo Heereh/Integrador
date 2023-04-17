@@ -270,6 +270,17 @@
     padding: 15px 16px;
   }
 
+  /* Section 3 */
+
+  .home-content{
+    padding: 1rem 1rem 0 1rem;
+  }
+  .home-info .home-game {
+    font-size: .7rem;
+  }
+  .price__game{
+    font-size: 1rem;
+  }
   /* Section Footer */
   .footer__socials {
     align-items: flex-start;
@@ -325,9 +336,10 @@
   }
   /* section 3 */
   .home-content {
-    margin: 0.3rem;
+    margin: 0;
     gap: 10px;
   }
+  
   .home-img {
     width: 120px;
     height: 68px;
@@ -340,7 +352,7 @@
     font-size: 0.8rem;
   }
   .price__game {
-    font-size: 1rem;
+    font-size: .8rem;
   }
 
   /* Footer */

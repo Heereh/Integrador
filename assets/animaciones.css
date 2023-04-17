@@ -97,4 +97,10 @@ btn-4:hover a {
   100% {
     transform: scale(1);
   }
+
+  /* Section 3 tabs */
+}
+
+.tabs_list .list .list__info a:hover {
+  color: var(--highlight); 
 }

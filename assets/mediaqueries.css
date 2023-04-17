@@ -136,6 +136,54 @@
   .recommend-big-game .big-img {
     height: 450px;
   }
+  /* Section 3 dropdown */
+
+  .tabs_list .list .list__info {
+    display: none;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    /*  z-index: 10; */
+  }
+  .dropdown__hover {
+    display: inline-block;
+    padding: 8px;
+    background: var(--secondary-bg);
+    color: var(--main);
+    font-family: var(--font-Yantra);
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+  }
+  .dropdown__hover:hover {
+    background: var(--main);
+    color: var(--stroke-cl);
+  }
+  .dropdown__menu {
+    position: absolute;
+    display: none;
+    top: 100%;
+    left: 0;
+    min-width: 80px; /*! Importante */
+    background: var(--secondary-bg);
+    color: var(--main);
+  }
+  .dropdown:hover .dropdown__menu {
+    display: block;
+  }
+  .dropdown__menu a {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    border: none;
+    font-size: 15px;
+    color: var(--main);
+  }
+  .dropdown__menu a:hover {
+    background: var(--highlight);
+  }
 }
 @media (max-width: 678px) {
   /* Section hero */
@@ -232,12 +280,48 @@
   }
 }
 @media (max-width: 320px) {
+  /* Header */
+  header .header-logo {
+    margin: 0 0.5rem 0 1.5rem;
+  }
+  header .header-logo H2 {
+    font-size: 1.2rem;
+  }
+  header .header-logo span {
+    font-size: 2rem;
+  }
   /* Hero */
   .home .home-title {
     font-size: 1.7rem;
   }
   .btn {
     padding: 10px 10px;
+  }
+  /* Section 1 */
+  .section-1 h1 {
+    padding: 0 0 5rem 0rem;
+    text-align: center;
+  }
+  /* section 2 */
+  .recommend .recommend__title {
+    text-align: center;
+    width: 82%;
+  }
+  .recommend-big-game {
+    width: 290px;
+    margin: 0 0.2rem;
+  }
+  .recommend-big-game .big-img {
+    height: 290px;
+  }
+  .descripcion-game h2 {
+    font-size: 1.3rem;
+  }
+  .big-blabla {
+    font-size: 1rem;
+  }
+  .descipcion-price ul li {
+    font-size: 1rem;
   }
   /* section 3 */
   .home-content {

@@ -259,6 +259,16 @@
   .descipcion__price__game {
     justify-content: flex-start;
   }
+
+  /* Footer */
+  .footer__socials {
+    justify-content: center;
+  }
+  .footer_contact  {
+    padding-top: 20px;
+    width: 300px;
+    display: inline-block;
+  }
 }
 @media (max-width: 440px) {
   /* section hero */
@@ -272,19 +282,43 @@
 
   /* Section 3 */
 
-  .home-content{
+  .home-content {
     padding: 1rem 1rem 0 1rem;
   }
   .home-info .home-game {
-    font-size: .7rem;
+    font-size: 0.7rem;
   }
-  .price__game{
+  .price__game {
     font-size: 1rem;
   }
   /* Section Footer */
   .footer__socials {
     align-items: flex-start;
-    padding-left: 28px;
+    padding: 0;
+  }
+  .footer_title_content {
+    width: initial;
+  }
+  .footer__socials .footer--title {
+    font-size: 2.3rem;
+    text-align: center;
+  }
+  .footer__socials .footer_socials-links {
+    justify-content: center;
+  }
+  .footer_contact {
+    padding-top: 30px;
+    width: 300px;
+    display: inline;
+    text-align: center;
+  }
+  .footer_contact ul span {
+    display: initial;
+  }
+  .contact--informacion li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .footer__information {
     gap: 45px;
@@ -339,7 +373,7 @@
     margin: 0;
     gap: 10px;
   }
-  
+
   .home-img {
     width: 120px;
     height: 68px;
@@ -352,7 +386,7 @@
     font-size: 0.8rem;
   }
   .price__game {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 
   /* Footer */

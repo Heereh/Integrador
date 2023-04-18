@@ -122,12 +122,12 @@ h2 {
 /* Hero */
 .home {
   position: relative;
-  min-height: 540px;
+  min-height: 460px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   margin: 0 5rem;
-  top: 200px;
+  top: 150px;
   /* margin-bottom: 200px; */
 }
 .home img {
@@ -609,7 +609,7 @@ h2 {
 }
 
 /*! Footer */
-#footer {
+footer {
   background-color: var(--secondary-bg);
   margin-top: 300px;
   padding-top: 1rem;

@@ -122,10 +122,10 @@ h2 {
 /* Hero */
 .home {
   position: relative;
-  min-height: 460px;
+  min-height: 600px;
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  /* align-items: center; */
+  justify-content: flex-start;
   margin: 0 5rem;
   top: 150px;
   /* margin-bottom: 200px; */
@@ -140,17 +140,33 @@ h2 {
 }
 .home-text {
   padding-right: 4rem;
-  text-align: right;
+  text-align: end;
+  position: relative;
 }
 .home-text .home-title {
   font-size: 4.4rem;
   text-transform: uppercase;
   color: var(--stroke-cl);
-  margin-bottom: 1rem;
+  margin: 1rem 1rem 0 0;
   font-family: 'Bebas Neue', cursive;
 }
+.home--title--descripcion {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.home--title--descripcion p {
+  width: 45%;
+  /* position: absolute;
+  left: 570; */
+  font-size: 1.4rem;
+  font-family: var(--font-Catamaran);
+  font-weight: 500;
+  text-align: end;
+}
 
-.btn {
+.home-text .btn {
   margin-top: 25px;
   background-color: rgba(0, 0, 0, 0.45);
   box-shadow: #16161a 4px 4px 0px;
@@ -166,6 +182,8 @@ h2 {
   transition: transform 200ms, box-shadow 200ms;
   z-index: 1;
   cursor: pointer;
+  position: relative;
+  top: 290;
 }
 .btn:active {
   transform: translateY(4px) translateX(4px);

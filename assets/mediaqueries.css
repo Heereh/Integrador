@@ -1,3 +1,11 @@
+@media (max-width: 1192px) {
+  .home--title--descripcion p {
+    font-size: 1.2rem;
+  }
+  .home-text .btn {
+    top: 310;
+  }
+}
 @media (max-width: 1050px) {
   /* Header */
   .nav-social {
@@ -14,11 +22,15 @@
     align-items: start;
   }
   .home .home-text {
-    padding-top: 90px;
+    padding-top: 10px;
     padding-right: 2rem;
   }
   .home-text .home-title {
     font-size: 4rem;
+  }
+  .home--title--descripcion p {
+    font-size: 1.2rem;
+    font-weight: 500;
   }
 }
 
@@ -66,16 +78,26 @@
   /* Section hero */
   .home {
     min-height: 300px;
+    justify-content: end;
   }
   .home .home-text {
     padding-top: 35px;
     padding-right: 2rem;
+    margin: 0;
   }
 
   .home-text .home-title {
-    font-size: 3.5rem;
+    font-size: 3.3rem;
+    padding-bottom: 1rem;
+    margin: 0;
   }
-  /*@ Section Recommend */
+  .home--title--descripcion p {
+    display: none;
+  }
+  .home-text .btn {
+    position: initial;
+  }
+  /*@ Section 2 */
 
   .recommend-big-game {
     width: 650px;
@@ -197,6 +219,11 @@
   .home-text .home-title {
     font-size: 2.5rem;
   }
+  .home-text .btn {
+    margin: 1rem 0 0 0;
+    padding: 15px 15px;
+    font-size: .9rem;
+  }
   /* section 3 */
   .home-info .home-game {
     font-size: 0.9rem;
@@ -276,8 +303,8 @@
     font-size: 2rem;
   }
   .btn {
-    margin: 0;
-    padding: 15px 16px;
+    
+    padding: 10px 12px;
   }
 
   /* Section 3 */
